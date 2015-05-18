@@ -4901,7 +4901,7 @@ class CssAtFontFaceParserPlugin extends aCssParserPlugin
 		{
 			$this->parser->pushState("T_AT_FONT_FACE::PREPARE");
 			$this->parser->clearBuffer();
-			return $index + 10;
+			return $index + 9;
 		}
 		// Start of @font-face declarations
 		elseif ($char === "{" && $state === "T_AT_FONT_FACE::PREPARE")
